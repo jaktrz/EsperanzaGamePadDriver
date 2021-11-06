@@ -22,7 +22,6 @@ public class TestActivity extends AppCompatActivity {
 
 	public static TestActivity mThis;
 	TextView usbDataText, keyEventText;
-	ScrollView scrollView;
 
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,7 +30,6 @@ public class TestActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_test);
 		usbDataText = findViewById(R.id.usbDataText);
 		keyEventText = findViewById(R.id.keyEventText);
-		//scrollView = findViewById(R.id.scrollView);
 	}
 
 	@Override
@@ -48,10 +46,7 @@ public class TestActivity extends AppCompatActivity {
 		StringBuilder sb = new StringBuilder();
 		sb.append(event.toString());
 		Log.e("processKeyEvent", "event=" + sb.toString());
-		runOnUiThread(() -> {
-			keyEventText.setText(sb.toString() + "\n" + keyEventText.getText());//.replace(", ", "\n")
-			//scrollView.post(() -> scrollView.fullScroll(ScrollView.FOCUS_DOWN));
-		});
+		runOnUiThread(() -> keyEventText.setText(sb.toString() + "\n" + keyEventText.getText()));
 	}
 
 	@Override

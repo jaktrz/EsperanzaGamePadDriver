@@ -173,8 +173,8 @@ public class UsbPadTools implements SharedPreferences.OnSharedPreferenceChangeLi
 		sb.append("AXIS_X=").append(AXIS_X).append("\n");
 		sb.append("AXIS_Y=").append(AXIS_Y).append("\n");
 
-		if (AXIS_X != last_AXIS_X || AXIS_Y != last_AXIS_Y) {
-			//to nie bardzo działa niestety
+		//Not working without root
+		/*if (AXIS_X != last_AXIS_X || AXIS_Y != last_AXIS_Y) {
 			MotionEvent.PointerProperties properties = new MotionEvent.PointerProperties();
 			MotionEvent.PointerCoords coords = new MotionEvent.PointerCoords();
 			coords.setAxisValue(MotionEvent.AXIS_X, AXIS_X);
@@ -187,7 +187,7 @@ public class UsbPadTools implements SharedPreferences.OnSharedPreferenceChangeLi
 			TestActivity activity = TestActivity.mThis;
 			if (activity != null)
 				activity.runOnUiThread(() -> activity.dispatchGenericMotionEvent(motionEvent));
-		}
+		}*/
 
 		last_AXIS_X = AXIS_X;
 		last_AXIS_Y = AXIS_Y;
