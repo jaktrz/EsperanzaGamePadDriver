@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/usbDataText"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:fontFamily="monospace"
+		android:textColor="@color/white"
+		android:textIsSelectable="true"
+		android:textSize="12sp"/>
+
+	<TextView
+		android:id="@+id/keyEventText"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:fontFamily="monospace"
+		android:textColor="@color/white"
+		android:textIsSelectable="true"
+		android:textSize="12sp"/>
+
+</LinearLayout>

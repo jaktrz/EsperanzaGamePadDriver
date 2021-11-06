@@ -1,0 +1,75 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:disableDependentsState="true">
+
+	<ListPreference
+		android:defaultValue="default"
+		android:entries="@array/usbPadButtonActions"
+		android:entryValues="@array/usbPadButtonActionsValues"
+		android:key="usb_action_select"
+		android:title="@string/usbActionSelect"
+		app:useSimpleSummaryProvider="true"/>
+
+	<ListPreference
+		android:defaultValue="default"
+		android:entries="@array/usbPadButtonActions"
+		android:entryValues="@array/usbPadButtonActionsValues"
+		android:key="usb_action_start"
+		android:title="@string/usbActionStart"
+		app:useSimpleSummaryProvider="true"/>
+
+	<ListPreference
+		android:defaultValue="default"
+		android:entries="@array/usbPadButtonActions"
+		android:entryValues="@array/usbPadButtonActionsValues"
+		android:key="usb_action_ltrigger"
+		android:title="@string/usbActionLtrigger"
+		app:useSimpleSummaryProvider="true"/>
+
+	<ListPreference
+		android:defaultValue="default"
+		android:entries="@array/usbPadButtonActions"
+		android:entryValues="@array/usbPadButtonActionsValues"
+		android:key="usb_action_rtrigger"
+		android:title="@string/usbActionRtrigger"
+		app:useSimpleSummaryProvider="true"/>
+
+	<SwitchPreference
+		android:defaultValue="true"
+		android:key="usb_button_y_with_back"
+		android:title="@string/usbButtonYWithBack"/>
+
+	<SwitchPreference
+		android:defaultValue="true"
+		android:key="usb_button_b_with_back"
+		android:title="@string/usbButtonBWithBack"/>
+
+	<SwitchPreference
+		android:defaultValue="true"
+		android:key="usb_button_a_with_dpad_center"
+		android:title="@string/usbButtonaAWithDpadCenter"/>
+
+	<SwitchPreference
+		android:defaultValue="true"
+		android:key="usb_button_x_with_dpad_center"
+		android:title="@string/usbButtonaXWithDpadCenter"/>
+
+	<ListPreference
+		android:defaultValue="0.5"
+		android:entries="@array/usbPadThumbSensitivities"
+		android:entryValues="@array/usbPadThumbSensitivitiesValues"
+		android:key="l_thumb_sensitivity"
+		android:title="@string/thumbLSensitivity"
+		app:useSimpleSummaryProvider="true"/>
+
+	<ListPreference
+		android:defaultValue="0.5"
+		android:entries="@array/usbPadThumbSensitivities"
+		android:entryValues="@array/usbPadThumbSensitivitiesValues"
+		android:key="r_thumb_sensitivity"
+		android:title="@string/thumbRSensitivity"
+		app:useSimpleSummaryProvider="true"/>
+
+</PreferenceScreen>

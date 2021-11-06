@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<Button
+		android:id="@+id/appSettingsButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/settings"/>
+
+	<Button
+		android:id="@+id/gamepadTestButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/gamepadTest"/>
+
+	<Button
+		android:id="@+id/keyboardSettingsButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/keyboardSettings"/>
+
+	<Button
+		android:id="@+id/keyboardSelectorButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/keyboardSelector"/>
+
+	<Button
+		android:id="@+id/accessibilitySettingsButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/accessibilitySettings"/>
+
+</LinearLayout>
