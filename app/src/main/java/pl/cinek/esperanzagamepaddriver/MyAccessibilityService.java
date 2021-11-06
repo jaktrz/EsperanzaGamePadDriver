@@ -13,8 +13,8 @@ public class MyAccessibilityService extends AccessibilityService {
 	SharedPreferences sp;
 
 	public static void performAction(int action) {
-		if (MyAccessibilityService.mThis != null)
-			MyAccessibilityService.mThis.performGlobalAction(action);
+		if (mThis != null)
+			mThis.performGlobalAction(action);
 	}
 
 	@Override

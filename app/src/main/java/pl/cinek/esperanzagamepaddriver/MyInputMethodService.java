@@ -12,8 +12,8 @@ public class MyInputMethodService extends InputMethodService implements Keyboard
 	UsbPadTools usbPadTools;
 
 	public static void keyEvent(KeyEvent keyEvent) {
-		if (MyInputMethodService.mThis != null)
-			MyInputMethodService.mThis.getCurrentInputConnection().sendKeyEvent(keyEvent);
+		if (mThis != null)
+			mThis.getCurrentInputConnection().sendKeyEvent(keyEvent);
 	}
 
 	@Override
